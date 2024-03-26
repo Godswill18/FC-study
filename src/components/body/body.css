@@ -1,0 +1,229 @@
+/* Base styles */
+/* Center the carousel-container and make it wide from end to end */
+.carousel-container{
+  margin-top: 1%;
+}
+
+.cm {
+  margin-left: 10%;
+  justify-content: center;
+  width: 60.5%;
+  height: 10%;
+  margin-left: 20%;
+  
+}
+
+.row2 h3 {
+  color: #00468c;
+}
+
+.first-card {
+  height: 30%;
+  float: right;
+  margin-right: 10%;
+}
+.lists-card-1 {
+  transition: transform 0.5s ease-in-out;
+
+}
+
+.lists-card-1:hover {
+  transform: translateY(-10px);
+}
+
+
+.lists-card-1 h3 {
+  color: #00468c;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.lists-card-1 ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.lists-card-1 ul li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.dec div {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.dec li {
+  list-style-type: disc;
+}
+
+.third-card {
+  display: flex;
+  width: 100%;
+}
+
+.lists-card-6{
+  margin-left: 10%;
+}
+
+.lists-card-4{
+  margin-left: 10%;
+}
+
+.lists-card-7{
+  margin-left: 10%;
+}
+
+.lists-card-8{
+  margin-left: 10%;
+}
+
+.lists-card-1,
+.lists-card-2,
+.lists-card-3,
+.lists-card-4,
+.lists-card-5,
+.lists-card-6,
+.lists-card-7,
+.lists-card-8 {
+  transition: transform 0.5s ease-in-out;
+}
+
+.lists-card-1:hover,
+.lists-card-2:hover,
+.lists-card-3:hover,
+.lists-card-4:hover,
+.lists-card-5:hover,
+.lists-card-6:hover,
+.lists-card-7:hover,
+.lists-card-8:hover {
+  transform: translateY(-10px);
+}
+
+.row2 {
+  margin-top: 0px;
+  padding: 50px 5%; /* Adjust the padding for smaller screens */
+}
+
+.awrapper {
+  padding-top: 40px; /* Adjust the padding for smaller screens */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Change to a single column for mobile */
+  grid-gap: 10px; /* Add some gap between items */
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  background: #5f9ea0;
+  height: auto; /* Adjust the height for mobile */
+  align-items: center;
+  padding: 20px; /* Add padding for mobile */
+}
+
+.grid h1 {
+  font-size: 24px; /* Adjust font size for mobile */
+}
+
+.grid h3 {
+  font-size: 18px; /* Adjust font size for mobile */
+}
+
+
+.card1,
+.card2 {
+  margin: 10px; /* Adjust margin for smaller screens */
+}
+
+button {
+  display: inline-block;
+  background-color: #5f9ea0;
+  color: #fff;
+  padding: 10px 20px; /* Adjust padding for smaller screens */
+  border-radius: 5px;
+  font-size: 18px; /* Adjust font size for mobile */
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #074547;
+  transform: scale(1.05); /* Adjust the scale factor for mobile */
+}
+
+
+
+/* Media query for mobile screens */
+@media screen and (max-width: 768px) {
+  .carousel-container {
+    margin-top: 39%; /* Adjust the margin for mobile screens */
+    width: 114%;
+    justify-content: center;
+  }
+
+  .carousel-slide{
+    margin-left: -10%;
+  }
+
+  .first-card {
+    float: none;
+    margin-right: 0;
+  }
+
+  .lists-card-1,
+  .lists-card-2,
+  .lists-card-3,
+  .lists-card-4,
+  .lists-card-5,
+  .lists-card-6,
+  .lists-card-7,
+  .lists-card-8 {
+    transform: none;
+  }
+
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .dec .first-card {
+    max-width: 5%;
+  }
+
+  .card2 {
+    margin: 10px 0;
+  }
+
+  .lists-card-1 {
+    width: 18rem;
+    margin-left: -7%;
+  }
+  
+  .lists-card-1 .card-body {
+    padding: 15px;
+  }
+
+  .lists-card-1 h3 {
+    font-size: 20px;
+  }
+
+  .lists-card-1 ul li {
+    font-size: 16px;
+  }
+
+  .third-card {
+    justify-content: flex-start; /* Change to flex-start for mobile */
+    width: auto; /* Adjust the width for mobile, or remove it for full width */
+    flex-direction: column; /* Stack items vertically for mobile */
+    align-items: center; /* Center items horizontally for mobile */
+  }
+  button {
+    padding: 10px 20px; /* Adjust padding for mobile */
+    font-size: 18px; /* Adjust font size for mobile */
+  }
+
+  button:hover {
+    transform: scale(1.05); /* Adjust the scale factor for mobile */
+  }
+}

@@ -1,0 +1,37 @@
+.preloader{
+    height: 100vh;
+    width: 100%;
+    background: black;
+    color: white;
+    position:fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 55;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.preloader .texts-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width: 380px;
+    font-size: 20px;
+    font-weight: 800;
+    overflow: hidden;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .preloader .texts-container {
+      width: 280px; /* Adjust width for mobile screens */
+      font-size: 16px; /* Adjust font size for mobile screens */
+      height: auto; /* Adjust height for dynamic content */
+      flex-direction: column; /* Stack text vertically */
+      text-align: center; /* Center text */
+    }
+  }

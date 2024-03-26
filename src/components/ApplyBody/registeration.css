@@ -1,0 +1,85 @@
+.contain {
+    display: flex;
+  }
+  
+  .side-heading {
+    width: 40%; /* Adjust width as needed */
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  
+  .form-container {
+    width: 50%; /* Adjust width as needed */
+    padding: 50px; /* Adjust padding as needed */
+    
+  }
+  
+  .label {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .inpuT {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+  }
+  .services{
+    width: 24%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+    flex: 2;
+
+  }
+  
+  .error {
+    color: red;
+    margin-top: 5px;
+  }
+  
+  .submit-btn {
+    background-color: #1eb2a6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    display: grid;
+    
+  }
+  
+  .success-container {
+    text-align: center;
+  }
+  
+  .success-logo {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+
+  /* Media Query for screens with max-width 780px */
+@media (max-width: 780px) {
+  .contain {
+    flex-direction: column;
+  }
+  
+  .side-heading,
+  .form-container,
+  .services {
+    width: 100%; /* Adjust width as needed */
+    padding: 20px; /* Adjust padding as needed */
+    margin-left: 0; /* Remove margin left for services */
+  }
+  
+  .services {
+    margin-top: 20px; /* Add margin top for services */
+  }
+}
+
+
+  
+  

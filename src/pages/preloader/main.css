@@ -1,0 +1,51 @@
+.contain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    animation: fadeInUp 1s ease-in-out;
+    margin-top: 10%;
+  }
+  
+  .main-logoX img {
+    width: 800px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    float: left;
+  }
+  
+  .content {
+    flex: 1;
+    margin-left: 20px;
+    float: right;
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
+@media (max-width: 768px) {
+  .contain {
+    flex-direction: column; /* Stack content vertically */
+    align-items: flex-start; /* Align items to the start */
+    margin-top: 5%; /* Adjust margin for mobile screens */
+    padding: 10px; /* Adjust padding for mobile screens */
+  }
+
+  .main-logoX img {
+    width: 100%; /* Occupy full width of the container */
+    float: none; /* Remove float for stacking */
+    margin-bottom: 10px; /* Add margin at the bottom */
+  }
+
+  .content {
+    margin-left: 0; /* Remove margin for mobile screens */
+  }
+}

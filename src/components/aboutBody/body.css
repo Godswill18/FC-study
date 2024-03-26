@@ -1,0 +1,261 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: "Arial", sans-serif;
+}
+
+/* Main container */
+.main-container {
+  background-color: #f8f8f8;
+  overflow: hidden;
+}
+
+/* Heading */
+.heading h1 {
+  color: #5f9ea0;
+  font-size: 55px;
+  text-align: center;
+  margin-top: 35px;
+}
+
+/* Content container */
+.containerY {
+  width: 90%;
+  margin: 65px auto;
+}
+
+/* Content section */
+.contentY {
+  margin: 0 25px;
+  animation: fadeInUp 2s ease;
+}
+
+.contentY h2 {
+  font-size: 38px;
+  margin-bottom: 20px;
+  color: #0e0d0d;
+}
+
+.contentY p {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  color: #0a0a0a;
+}
+.list{
+  font-size: 24px;
+  line-height: 1.5;
+  color: #0a0909;
+  margin-top: 90px;
+  width: 100%;
+  
+}
+
+.list h2{
+  text-align: center;
+}
+
+.list h4{
+  font-style: italic;
+  font-weight: 600;
+}
+
+.list li{
+  list-style-type: disc;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.list-cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+  margin-top: 60px;
+  flex: 1 1 calc(58rem - 30px); /* Account for padding in card */
+}
+
+.list-card-1,
+.list-card-2,
+.list-card-3,
+.list-card-4 ,
+.list-card-5{
+  transition: transform 0.5s ease-in-out;
+}
+
+.list-card-1:hover,
+.list-card-2:hover,
+.list-card-3:hover,
+.list-card-4:hover,
+.list-card-5:hover {
+  transform: translateY(-10px);
+}
+
+
+
+.contentY button {
+  display: inline-block;
+  background-color: #5f9ea0;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contentY button:hover {
+  background-color: #074547;
+  transform: scale(1.1);
+}
+
+/* Image section */
+.con-image {
+  width: 600px;
+  margin: auto;
+  animation: fadeInRight 2s ease;
+}
+
+.con-image img {
+  width: 100%;
+  height: auto;
+ 
+}
+
+/* Media Query for screens with max-width 768px */
+@media screen and (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: "Arial", sans-serif;
+  }
+  
+  /* Main container */
+  .main-container {
+    background-color: #f8f8f8;
+    overflow: hidden;
+    margin-top: 18%;
+  }
+  
+  /* Heading */
+  .heading h1 {
+    color: #5f9ea0;
+    font-size: 40px; /* Adjust font size for mobile */
+    text-align: center;
+    margin-top: 20px; /* Adjust margin for mobile */
+  }
+  
+  /* Content container */
+  .containerY {
+    width: 90%;
+    margin: 35px auto; /* Adjust margin for mobile */
+  }
+  
+  /* Content section */
+  .contentY {
+    margin: 0 15px; /* Adjust margin for mobile */
+    animation: fadeInUp 2s ease;
+  }
+  
+  .contentY h2 {
+    font-size: 30px; /* Adjust font size for mobile */
+    margin-bottom: 15px; /* Adjust margin for mobile */
+    color: #0e0d0d;
+  }
+  
+  .contentY p {
+    font-size: 18px; /* Adjust font size for mobile */
+    line-height: 1.5;
+    margin-bottom: 20px; /* Adjust margin for mobile */
+    color: #0a0a0a;
+  }
+  
+  .list {
+    font-size: 18px; /* Adjust font size for mobile */
+    line-height: 1.5;
+    color: #0a0909;
+    margin-top: 40px; /* Adjust margin for mobile */
+    width: 100%;
+  }
+  
+  .list h2 {
+    text-align: center;
+    font-size: 28px; /* Adjust font size for mobile */
+  }
+  
+  .list h4 {
+    font-style: italic;
+    font-weight: 600;
+  }
+  
+  .list li {
+    list-style-type: disc;
+    margin-top: 15px; /* Adjust margin for mobile */
+    margin-bottom: 30px; /* Adjust margin for mobile */
+  }
+  
+  .list-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr)); /* Adjust grid columns for mobile */
+    gap: 15px; /* Adjust gap for mobile */
+    margin-bottom: 30px; /* Adjust margin for mobile */
+    margin-top: 40px; /* Adjust margin for mobile */
+  }
+  
+  .list-card-1,
+  .list-card-2,
+  .list-card-3,
+  .list-card-4,
+  .list-card-5 {
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .list-card-1:hover,
+  .list-card-2:hover,
+  .list-card-3:hover,
+  .list-card-4:hover,
+  .list-card-5:hover {
+    transform: translateY(-5px); /* Adjust transformation for mobile */
+  }
+  
+  .contentY button {
+    display: inline-block;
+    background-color: #5f9ea0;
+    color: #fff;
+    padding: 10px 20px; /* Adjust padding for mobile */
+    border-radius: 5px;
+    font-size: 16px; /* Adjust font size for mobile */
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .contentY button:hover {
+    background-color: #074547;
+    transform: scale(1.05); /* Adjust transformation for mobile */
+  }
+  
+  /* Image section */
+  .con-image {
+    width: 90%;
+    margin: auto; /* Center the image */
+    animation: fadeInRight 2s ease;
+  }
+  
+  .con-image img {
+    width: 100%;
+    height: auto;
+  }
+}

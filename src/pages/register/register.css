@@ -1,0 +1,10 @@
+.header {
+   width: 20%;
+   height: 20%;
+  
+    @media (max-width: 780px) {
+      height: 10%; /* Adjust the desired height for mobile screens */
+      width: 10%;/* Any other mobile-specific styles can be added here */
+      display: flex;
+    }
+  }

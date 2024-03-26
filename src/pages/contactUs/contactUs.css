@@ -1,0 +1,418 @@
+.contactUs{
+    background:whitesmoke;
+    
+}
+.contactUs{
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+
+}
+
+.contactUs .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+.contactus-p{
+    width: 100%;
+}
+.form{
+    grid-area: form;
+}
+
+.info{
+    grid-area: info;
+}
+
+.map{
+    grid-area: map;
+}
+
+.contact{
+    padding: 40px;
+    box-shadow: 0 5px 35px rgba(0,0,0,0,15);
+   background-color: #0291b1
+   
+}
+
+.contact input{
+color: white;
+}
+
+.contact textarea{
+    color: white;
+}
+  
+.box{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas:
+     "form info"
+     "form map";
+     grid-gap: 20px;
+     margin-top: 20px;
+}
+
+.contact h3{
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+/* Form */
+
+.formBox{
+position: relative;
+width: 100%;
+}
+
+.formBox .row50
+{
+    display: flex;
+    gap: 20px;
+}
+
+.inputBox
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.formBox .row100 .inputBox{
+    width: 100%;
+}
+
+.inputBox span{
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+
+.inputBox input{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid rgb(248, 248, 248);
+    background-color: transparent;
+}
+
+.inputBox .services2{
+  width: 18%;
+  background-color: transparent;
+  color: white;
+}
+
+.services2 option{
+  color: #615f5f;
+}
+
+.inputBox textarea {
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid rgb(255, 255, 255);
+    resize: none;
+    min-height: 220px;
+    margin-bottom: 10px;
+    background-color: transparent;
+}
+
+.inputBox input[type="submit"]{
+    background: rgb(255, 253, 253);
+    border: none;
+    color: rgb(13, 13, 13);
+    font-size: 1.1em;
+    max-width: 120px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 14px 15px;
+}
+
+
+
+.inputBox ::placeholder
+{
+    color: rgb(217, 214, 214);
+}
+
+/* info*/
+.info{
+    background-color: #00468c
+
+}
+
+.info h3{
+    color: rgb(245, 235, 235);
+}
+
+.info .infoBox div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info .infoBox div span{
+    min-width: 40px;
+    height: 40px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.info .infoBox div p{
+    color: aliceblue;
+    font-size: 1.1em;
+}
+
+.info .infoBox div a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.soci{
+    margin-top: 40px;
+    display: flex;
+}
+
+.soci li
+{
+    list-style-type: none;
+    margin-right: 15px;
+}
+
+.soci li a
+{
+    color: #fff;
+    font-size: 2em;
+    color: #ccc;
+}
+
+.soci li a:hover
+{
+    color: #615f5f;
+}
+
+.map
+{
+    padding: 0;
+}
+
+.map iframe
+{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/*Responsive Design*/
+
+@media (max-width: 768px) {
+    .contactUs {
+        background: whitesmoke;
+        margin-top: 35%;
+      }
+      
+      .contactUs {
+        position: relative;
+        width: 100%;
+        padding: 20px; /* Adjust padding for mobile screens */
+      }
+      
+      .contactUs .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em; /* Adjust font size for mobile screens */
+        
+      }
+      
+      .contactus-p {
+        width: 100%;
+      }
+      
+      .form {
+        grid-area: form;
+      }
+      
+      .info {
+        grid-area: info;
+      }
+      
+      .map {
+        grid-area: map;
+      }
+      
+      .contact {
+        padding: 20px; /* Adjust padding for mobile screens */
+        box-shadow: 0 5px 35px rgba(0, 0, 0, 0, 15);
+        background-color: #0291b1;
+      }
+      
+      .contact input {
+        color: white;
+      }
+      
+      .contact textarea {
+        color: white;
+      }
+      
+      .box {
+        position: relative;
+        display: flex; /* Change to flex for mobile screens */
+        flex-direction: column; /* Change to column for mobile screens */
+        gap: 20px;
+        margin-top: 20px;
+      }
+      
+      .contact h3 {
+        color: rgb(255, 255, 255);
+        font-weight: 500;
+        font-size: 1.2em; /* Adjust font size for mobile screens */
+        margin-bottom: 10px;
+      }
+      
+      /* Form */
+      
+      .formBox {
+        position: relative;
+        width: 100%;
+      }
+      
+      .formBox .row50 {
+        display: flex;
+        flex-direction: column; /* Change to column for mobile screens */
+        gap: 20px;
+      }
+      
+      .inputBox {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+      }
+      
+      .formBox .row100 .inputBox {
+        width: 100%;
+      }
+      
+      .inputBox span {
+        color: rgb(255, 255, 255);
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-weight: 500;
+      }
+      
+      .inputBox input,
+      .inputBox textarea {
+        padding: 10px;
+        font-size: 1em; /* Adjust font size for mobile screens */
+        outline: none;
+        border: 1px solid rgb(255, 255, 255);
+        background-color: transparent;
+      }
+      
+      .inputBox textarea {
+        resize: none;
+        min-height: 160px; /* Adjust height for mobile screens */
+      }
+      
+      .inputBox input[type="submit"] {
+        background: rgb(255, 253, 253);
+        border: none;
+        color: rgb(13, 13, 13);
+        font-size: 1em; /* Adjust font size for mobile screens */
+        max-width: 120px;
+        font-weight: 500;
+        cursor: pointer;
+        padding: 10px 15px; /* Adjust padding for mobile screens */
+      }
+      
+      .inputBox ::placeholder {
+        color: rgb(217, 214, 214);
+      }
+
+      .inputBox .services2{
+        width: 50%;
+      }
+      
+      /* info */
+      
+      .info {
+        background-color: #00468c;
+        padding: 20px; /* Adjust padding for mobile screens */
+      }
+      
+      .info h3 {
+        color: rgb(245, 235, 235);
+        font-size: 1.2em; /* Adjust font size for mobile screens */
+      }
+      
+      .info .infoBox div {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      
+      .info .infoBox div span {
+        min-width: 30px; /* Adjust width for mobile screens */
+        height: 30px; /* Adjust height for mobile screens */
+        background: rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2em; /* Adjust font size for mobile screens */
+        border-radius: 50%;
+        margin-right: 10px; /* Adjust margin for mobile screens */
+      }
+      
+      .info .infoBox div p,
+      .info .infoBox div a {
+        color: aliceblue;
+        font-size: 1.1em; /* Adjust font size for mobile screens */
+        text-decoration: none;
+      }
+      
+      .soci {
+        margin-top: 20px; /* Adjust margin for mobile screens */
+        display: flex;
+        justify-content: center; /* Center the icons */
+        gap: 15px; /* Adjust gap for mobile screens */
+      }
+      
+      .soci li {
+        list-style-type: none;
+        margin-right: 15px;
+      }
+      
+      .soci li a {
+        color: #fff;
+        font-size: 2em; /* Adjust font size for mobile screens */
+        color: #ccc;
+      }
+      
+      .soci li a:hover {
+        color: #b1afaf;
+      }
+      
+      .map {
+        padding: 0;
+      }
+      
+      .map iframe {
+        width: 100%;
+        height: 200px; /* Adjust height for mobile screens */
+      }
+    }

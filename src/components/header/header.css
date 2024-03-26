@@ -1,0 +1,128 @@
+/* Styles for larger screens */
+.head {
+  padding: 20px 0;
+  color: #00468c;
+  padding-left: 1%;
+}
+
+.logo-img {
+  width: 150px;
+  height: 60px;
+}
+
+.head .icon {
+  margin-left: 10px;
+}
+
+header {
+  background-color: #00468c;
+  margin: 0 30px;
+  margin-top: 50px;
+}
+
+header .nav {
+  display: flex !important;
+}
+
+header li {
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+header ul {
+  padding: 30px 20px;
+}
+
+header ul li {
+  color: #ffffff;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.custom-link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+header ul li:hover {
+  color: #0e9c8e;
+}
+
+.active {
+  font-weight: bold;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+Link {
+  color: rgb(255, 255, 255);
+}
+
+.white-link {
+  color: white; /* Set the text color to white */
+  text-decoration: none; /* Remove default underline */
+}
+
+.start {
+  background-color: #0291b1;
+  padding: 30px 70px;
+  color: #fff;
+  clip-path: polygon(10% 0%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.button {
+  cursor: pointer;
+}
+
+/* Media query for mobile screens */
+@media screen and (max-width: 768px) {
+  .head {
+    padding: 10px 0;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .head .icon {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  header {
+    margin: 0;
+    margin-top: 20px;
+  }
+
+  header ul {
+    padding: 10px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #00468c;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+  }
+
+  header li {
+    margin: 10px 0;
+  }
+
+  .toggle {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+
+  header ul.active {
+    display: flex;
+  }
+
+  .start {
+    padding: 20px 40px; /* Adjust padding for mobile screens */
+    text-align: center; /* Center the content horizontally */
+    width: 36%;
+  }
+}
